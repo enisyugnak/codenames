@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #F5F5F5;
+    padding: 20px;
+    font-family: 'Karla', sans-serif;
+}
+
+main {
+    border-radius: 10px;
+    min-height: 420px;
+    max-width: 800px;
+    background-color: #F5F5F5;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.board--frame {
+    border-radius: 10px;
+    padding: 10px;
+    border: 3px solid;
+}
+
+.title {
+    font-size: 40px;
+    margin: 0;
+}
+
+.instructions {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin-top: 0;
+    text-align: center;
+}
+
+.board--holder {
+    display: grid;
+    grid-template: auto auto / repeat(5, 1fr);
+    gap: 5px;
+}
+
+.cross {
+    color: #FFFFFF;
+}
+
+.board--item {
+    height: 140px;
+    width: 140px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.roll--btn {
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    font-size: 1, 2rem;
+    color: white;
+    padding: 14px;
+    margin-top: 20px;
+    background: #5035FF;
+    box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.roll--btn:focus {
+    outline: none;
+}
+
+.roll--btn:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}

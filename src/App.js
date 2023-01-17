@@ -65,16 +65,24 @@ function App() {
       col = {tile.col}
     />
   )
+  function renewBoard(){
+    let result = window.confirm('The board will be changed');
+    if(result){
+      dealCards();
+    }
+  }
 
   return (
     <main>
       <div className = "board--frame" style={borderColor}>
-        <div className="board--holder"> 
+        <div className="board--holder" onClick={renewBoard}> 
             {elements}
         </div>
       </div> 
-      <button className="roll--btn" onClick={dealCards}>NEW BOARD</button>
     </main>
+
+
+
   );
 }
 
